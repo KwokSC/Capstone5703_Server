@@ -1,13 +1,14 @@
 package com.csiro.capstone.service;
 
 import com.csiro.capstone.common.ResponseObject;
+import com.csiro.capstone.entity.Result;
 
 public interface ResultService {
 
     ResponseObject uploadPic();
 
-    ResponseObject calculateResult();
+    Result calculateResult();
 
-    ResponseObject getResult();
+    ResponseObject getResult(String id);
 
 }

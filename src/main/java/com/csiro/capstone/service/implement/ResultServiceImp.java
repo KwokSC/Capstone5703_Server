@@ -18,13 +18,13 @@ public class ResultServiceImp implements ResultService {
     }
 
     // Implement function for server to call to calculate results after receiving pictures
-    public ResponseObject calculateResult(){
-        ResponseObject responseObject = new ResponseObject();
-        return responseObject;
+    public Result calculateResult(){
+        Result result = new Result();
+        return result;
     }
 
     // Implement function for server to return results after calculation completion
-    public ResponseObject getResult(){
+    public ResponseObject getResult(String id){
         ResponseObject responseObject = new ResponseObject();
         Result result = new Result();
         Date date = new Date();

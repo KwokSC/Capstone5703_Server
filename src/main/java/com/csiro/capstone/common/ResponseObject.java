@@ -3,9 +3,9 @@ package com.csiro.capstone.common;
 import lombok.Data;
 
 @Data
-public class ResponseObject {
+public class ResponseObject<T> {
 
-    private Object data;
+    private T data;
 
     private int code;
 

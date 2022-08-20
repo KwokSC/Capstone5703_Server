@@ -14,8 +14,8 @@ public class ResultController {
     private ResultService resultService;
 
     @RequestMapping("/getResult")
-    public ResponseObject getResult(){
-        return resultService.getResult();
+    public ResponseObject getResult(String id){
+        return resultService.getResult(id);
     }
 
 }
