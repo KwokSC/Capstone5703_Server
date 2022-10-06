@@ -1,5 +1,6 @@
 package com.csiro.capstone.service;
 
+import com.csiro.capstone.common.ResponseObject;
 import com.csiro.capstone.entity.User;
 import org.springframework.stereotype.Service;
 
@@ -7,9 +8,9 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 
     // Register new users.
-    boolean signUp(User user);
+    ResponseObject signUp(User user);
 
     // Check users' account and password.
-    boolean signIn(String account, String password);
+    ResponseObject signIn(String account, String password);
 
 }
