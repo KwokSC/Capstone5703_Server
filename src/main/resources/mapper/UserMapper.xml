@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csiro.capstone.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.csiro.capstone.entity.User">
+        <id column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="user_account" jdbcType="VARCHAR" property="userAccount"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
+        <result column="user_email" jdbcType="VARCHAR" property="userMail"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="userPhone"/>
+    </resultMap>
+
+    <select id="selectByUserAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from user_info where user_account = #{userAccount}
+    </select>
+
+    <insert id="addUser" parameterType="com.csiro.capstone.entity.User">
+        insert into user_info(user_account, user_password)
+        values (#{userName}, #{userPassword})
+    </insert>
+
+</mapper>

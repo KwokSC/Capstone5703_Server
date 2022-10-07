@@ -1,11 +1,18 @@
 package com.csiro.capstone.service;
 
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 
-public interface ModelService {
+@Service
+public class ModelService{
 
-    boolean isLatest();
+    public boolean isLatest(){
+        return true;
+    }
 
-    File getModel();
+    public File getModel(){
+        return new File("");
+    }
+
 }

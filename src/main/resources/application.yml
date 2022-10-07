@@ -3,9 +3,9 @@ Server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/capstone5703?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/capstone?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
     username: root
-    password: capstone5703
+    password: 19980518
 
 redis:
   host: localhost
