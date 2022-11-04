@@ -6,7 +6,6 @@ import com.csiro.capstone.entity.User;
 import com.csiro.capstone.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.rmi.runtime.Log;
 
 @Service
 public class UserService{
